@@ -4,17 +4,15 @@
 }
 
 .ui.container .h1 {
-    
     color: rgb(182, 113, 238);
     text-shadow: 2px 3px 2px #83cc0e;
 }
-
 
 .ui.segment p{
     font-size: 18px;
     color: rgb(58, 34, 34);
     font-weight: 700;
-    
+    border-bottom-color: #2185d0 1px;
 }
 
 /* Стили для оповещений */
@@ -41,7 +39,22 @@
     color: #333;
 }
 
+#scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2185d0;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    display: none;
+    z-index: 999; /* Поднимает кнопку наверх других элементов */
+}
 
+/* Медиа-запросы для разных устройств */
+
+/* Для мобильных устройств */
 @media (max-width: 576px) {
     .field {
         text-align: center;
@@ -58,19 +71,22 @@
     }
 
     .ui.header.h1 {
-        font-size: 28px;
+        font-size: 20px;
     }
 
     .ui.segment p{
         font-size: 14px;
         color: rgb(58, 34, 34);
         font-weight: 700;
-        word-wrap: break-word; 
+        word-wrap: break-word; /* или word-break: break-all; */
     }
-
 
     .test_style {
         font-size: 14px;
+    }
+
+    p {
+        color: green;
     }
 }
 
@@ -140,15 +156,3 @@
     }
 }
 
-#scroll-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #2185d0;
-    color: white;
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 50%;
-    display: none;
-    z-index: 999; /* Поднимает кнопку наверх других элементов */
-}
