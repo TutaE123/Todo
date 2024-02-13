@@ -1,0 +1,156 @@
+.test_style {
+    text-align: center;
+    color: lightgrey;
+}
+
+.ui.container .h1 {
+    
+    color: rgb(182, 113, 238);
+    text-shadow: 2px 3px 2px #83cc0e;
+}
+
+
+.ui.segment p{
+    font-size: 18px;
+    color: rgb(58, 34, 34);
+    font-weight: 700;
+    
+}
+
+/* Стили для оповещений */
+.messages {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.messages li {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.messages .success {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.messages .warning {
+    background-color: #FFC107;
+    color: #333;
+}
+
+/* Медиа-запросы для разных устройств */
+
+/* Для мобильных устройств */
+@media (max-width: 576px) {
+    .field {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .field-input {
+        margin-bottom: 10px;
+    }
+
+    .field button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .ui.header.h1 {
+        font-size: 28px;
+    }
+
+    .ui.segment p{
+        font-size: 14px;
+        color: rgb(58, 34, 34);
+        font-weight: 700;
+        word-wrap: break-word; /* или word-break: break-all; */
+    }
+
+
+    .test_style {
+        font-size: 14px;
+    }
+}
+
+/* Для планшетов и средних экранов */
+@media (min-width: 577px) and (max-width: 1199px) {
+    .field {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .field-input {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .field-button {
+        width: 100%;
+    }
+
+    .ui.header.h1 {
+        font-size: 30px;
+    }
+
+    .test_style {
+        font-size: 20px;
+    }
+}
+
+/* Для больших экранов */
+@media (min-width: 1200px) {
+    .field {
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+
+    .field-input {
+        margin-right: 10px;
+        width: 100%;
+    }
+
+    .field-button {
+        width: auto;
+    }
+
+    .ui.header.h1 {
+        font-size: 36px;
+    }
+
+    .test_style {
+        font-size: 24px;
+    }
+}
+
+/* Дополнительные стили для вертикальной ориентации, кроме больших экранов */
+@media (max-width: 1199px) and (orientation: portrait) {
+    .field-input {
+        width: 100%;
+    }
+
+    .field-button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+#scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2185d0;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    display: none;
+    z-index: 999; /* Поднимает кнопку наверх других элементов */
+}
